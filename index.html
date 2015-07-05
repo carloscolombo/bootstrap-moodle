@@ -114,7 +114,7 @@
 						<pre class="pre-scrollable prettyprint linenums lang-javascript" data-source="#example3"></pre>
 						<script id="example3" type="text/html">
 							$(function(){
-								moodle.create({
+								Moodle.create({
 									selector: '#my-moodle-button',
 									modal: {
 										title: 'Simple Click Event',
@@ -136,7 +136,7 @@
 						<script id="example3-1" type="text/html">
 							$(function(){
 								// cache instance
-								var moodle = moodle.create();
+								var moodle = Moodle.create();
 
 								// ...
 								// trigger later via moodle
@@ -293,7 +293,7 @@
 						<script id="example7" type="text/html">
 							$(function(){
 								// cache
-								var moodle = moodle.create({
+								var moodle = Moodle.create({
 									selector: 'button#my-moodle-button',
 									buttons: [{
 										type: 'default',
@@ -347,7 +347,7 @@
 						<script id="example8" type="text/html">
 							$(function(){
 								// cache
-								var moodle = moodle.create({
+								var moodle = Moodle.create({
 									selector: 'button#my-moodle-button',
 									modal: {
 										title: 'Dynamically Add Buttons',
@@ -655,54 +655,54 @@
 			$this.text(text.join('\n\n').replace(/\t/g, ' '));
 		});
 
-		// // example 3
-		// moodle.create({
-		// 	selector: '#example3-button',
-		// 	modal: {
-		// 		title: 'Simple Click Event',
-		// 		content: '<span class="text-italic">Ooooodles and Mooooodles!</span>'
-		// 	}
-		// });
+		// example 3
+		Moodle.create({
+			selector: '#example3-button',
+			modal: {
+				title: 'Simple Click Event',
+				content: '<span class="text-italic">Ooooodles and Mooooodles!</span>'
+			}
+		});
 
-		// // example 4
-		// moodle.create({
-		// 	selector: '#example4-button'
-		// });
+		// example 4
+		Moodle.create({
+			selector: '#example4-button'
+		});
 
-		// // example 4-1
-		// moodle.create({
-		// 	selector: '#example4-1-button',
-		// 	loadOptions: {
-		// 		url: '/partial-alt.html'
-		// 	}
-		// });
+		// example 4-1
+		Moodle.create({
+			selector: '#example4-1-button',
+			loadOptions: {
+				url: '/partial-alt.html'
+			}
+		});
 
-		// // example 5
-		// var example5 = moodle.create({
-		// 	selector: '#example5-button'
-		// });
+		// example 5
+		var example5 = Moodle.create({
+			selector: '#example5-button'
+		});
 
-		// example5.$modal.on('modal-loaded', function(e, response){
-		// 	var html = '<h4>User Id: ' + response.id +'</h4>'
-		// 	+ '<p>' + response.message +'</p>';
+		example5.$modal.on('modal-loaded', function(e, response){
+			var html = '<h4>User Id: ' + response.id +'</h4>'
+			+ '<p>' + response.message +'</p>';
 
-		// 	$(this).find('.modal-body').html(html);
-		// });
+			$(this).find('.modal-body').html(html);
+		});
 
-		// // example 6
-		// moodle.create({
-		// 	selector: '#example6-button',
-		// 	modal:{
-		// 		title: 'Bootstrap Options',
-  //         		content: 'Static backdrop option added!',
-		// 		bootstrapOptions:{
-		// 			backdrop: 'static'
-		// 		}
-		// 	}
-		// });
+		// example 6
+		Moodle.create({
+			selector: '#example6-button',
+			modal:{
+				title: 'Bootstrap Options',
+          		content: 'Static backdrop option added!',
+				bootstrapOptions:{
+					backdrop: 'static'
+				}
+			}
+		});
 
 		// example 7
-		var test = moodle.create({
+		var test = Moodle.create({
 			selector: '#example7-button',
 			modal: {
 				title: 'Moodle Custom Buttons',
@@ -744,7 +744,7 @@
 			}
 		});
 
-		var example8 = moodle.create({
+		var example8 = Moodle.create({
 			selector: '#example8-button',
 			modal: {
 				title: 'Dynamically Add Buttons',
