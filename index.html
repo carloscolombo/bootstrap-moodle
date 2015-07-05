@@ -77,7 +77,7 @@
 						<pre class="pre-scrollable prettyprint linenums lang-javascript" data-source="#example1"></pre>
 						<script id="example1" type="text/html">
 							$(function(){
-								var moodle = Moodles.create()
+								var moodle = Moodle.create()
 								moodle.show();
 							});
 						</script>
@@ -90,7 +90,7 @@
 						<pre class="pre-scrollable prettyprint linenums lang-javascript" data-source="#example2"></pre>
 						<script id="example2" type="text/html">
 							$(function(){
-								var moodle = Moodles.create({
+								var moodle = Moodle.create({
 									modal: {
 										title: 'Simple Parameters',
 										content: '<span class="text-italic">Ooooodles and Mooooodles!</span>'
@@ -114,7 +114,7 @@
 						<pre class="pre-scrollable prettyprint linenums lang-javascript" data-source="#example3"></pre>
 						<script id="example3" type="text/html">
 							$(function(){
-								Moodles.create({
+								moodle.create({
 									selector: '#my-moodle-button',
 									modal: {
 										title: 'Simple Click Event',
@@ -136,7 +136,7 @@
 						<script id="example3-1" type="text/html">
 							$(function(){
 								// cache instance
-								var moodle = Moodles.create();
+								var moodle = moodle.create();
 
 								// ...
 								// trigger later via moodle
@@ -293,7 +293,7 @@
 						<script id="example7" type="text/html">
 							$(function(){
 								// cache
-								var moodle = Moodles.create({
+								var moodle = moodle.create({
 									selector: 'button#my-moodle-button',
 									buttons: [{
 										type: 'default',
@@ -347,7 +347,7 @@
 						<script id="example8" type="text/html">
 							$(function(){
 								// cache
-								var moodle = Moodles.create({
+								var moodle = moodle.create({
 									selector: 'button#my-moodle-button',
 									modal: {
 										title: 'Dynamically Add Buttons',
@@ -656,7 +656,7 @@
 		});
 
 		// // example 3
-		// Moodles.create({
+		// moodle.create({
 		// 	selector: '#example3-button',
 		// 	modal: {
 		// 		title: 'Simple Click Event',
@@ -665,12 +665,12 @@
 		// });
 
 		// // example 4
-		// Moodles.create({
+		// moodle.create({
 		// 	selector: '#example4-button'
 		// });
 
 		// // example 4-1
-		// Moodles.create({
+		// moodle.create({
 		// 	selector: '#example4-1-button',
 		// 	loadOptions: {
 		// 		url: '/partial-alt.html'
@@ -678,7 +678,7 @@
 		// });
 
 		// // example 5
-		// var example5 = Moodles.create({
+		// var example5 = moodle.create({
 		// 	selector: '#example5-button'
 		// });
 
@@ -690,7 +690,7 @@
 		// });
 
 		// // example 6
-		// Moodles.create({
+		// moodle.create({
 		// 	selector: '#example6-button',
 		// 	modal:{
 		// 		title: 'Bootstrap Options',
@@ -702,7 +702,7 @@
 		// });
 
 		// example 7
-		var test = Moodles.create({
+		var test = moodle.create({
 			selector: '#example7-button',
 			modal: {
 				title: 'Moodle Custom Buttons',
@@ -744,7 +744,7 @@
 			}
 		});
 
-		var example8 = Moodles.create({
+		var example8 = moodle.create({
 			selector: '#example8-button',
 			modal: {
 				title: 'Dynamically Add Buttons',

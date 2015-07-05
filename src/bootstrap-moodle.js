@@ -1,6 +1,6 @@
 'use strict';
 
-var Moodles = function(){
+var Moodle = function(){
 
 	// modal html
 	var modal = '<div class="modal fade">'
@@ -183,8 +183,8 @@ var Moodles = function(){
 	return moodle;
 }
 
-Moodles.create = function(params){
-	var moodles = Moodles();
-	moodles.init(params);
-	return moodles;
+Moodle.create = function(params){
+	var moodle = Moodle();
+	moodle.init(params);
+	return moodle;
 }
