@@ -19,6 +19,7 @@ var Moodle = function(){
 	// possible button types
 	var buttonType ={
 		default: 'btn-default',
+		primary: 'btn-primary',
 		success: 'btn-success',
 		warning: 'btn-warning',
 		danger: 'btn-danger',
